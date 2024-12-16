@@ -29,7 +29,7 @@ public class LoginTests {
   void incorrectLoginInput() throws MalformedURLException {
     loginPage.open();
     loginPage.authorizeWithInvalidLogin();
-    loginPage.invalidEmailErrorWindowShouldBeVisible();
+    loginPage.invalidEmailOrPasswordErrorWindowShouldBeVisible();
   }
   
   @Test
